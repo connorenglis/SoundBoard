@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="105dp" />
+        app:layout_constraintGuide_begin="78dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
@@ -49,17 +49,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="141dp" />
+        app:layout_constraintGuide_begin="130dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="302dp" />
+        app:layout_constraintGuide_begin="290dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_dog"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Dog Barking"
@@ -71,7 +71,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_Car"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Fast car"
@@ -102,7 +102,7 @@
         tools:layout_editor_absoluteX="16dp" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_monkeylaugh"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Monkey laugh"
@@ -122,7 +122,7 @@
         tools:layout_editor_absoluteX="314dp" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_laugh"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
@@ -143,7 +143,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_rewind"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Tape rewind "
@@ -154,7 +154,7 @@
         app:layout_constraintVertical_bias="0.475" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/btn_crepydrone"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Creppy drone"
@@ -164,7 +164,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/btn_fire"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Aggresive flame"
@@ -182,7 +182,7 @@
         tools:layout_editor_absoluteY="330dp" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/btn_cricketchrip"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Cricket chirp"
@@ -200,7 +200,7 @@
         tools:layout_editor_absoluteY="38dp" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/btn_notification"
         android:layout_width="123dp"
         android:layout_height="122dp"
         android:text="Harp Notifcation"
@@ -212,7 +212,7 @@
         app:layout_constraintVertical_bias="0.408" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/btn_tone"
         android:layout_width="149dp"
         android:layout_height="131dp"
         android:text="Catchy tone"
@@ -222,10 +222,10 @@
         app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btn_terror"
         android:layout_width="110dp"
         android:layout_height="92dp"
-        android:text=""
+        android:text="terror transition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline11"
