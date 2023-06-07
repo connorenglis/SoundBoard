@@ -6,7 +6,6 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.MediaController;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,13 +28,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnFire = findViewById(R.id.btn_fire);
-        btnTone = findViewById(R.id.btn_tone);
-        btnLaugh = findViewById(R.id.btn_tone);
+        btnLaugh = findViewById(R.id.btn_laugh);
         btnMonkeyLaugh = findViewById(R.id.btn_monkeylaugh);
         btnDroneSound = findViewById(R.id.btn_crepydrone);
         btnCricketChirp = findViewById(R.id.btn_cricketchrip);
         btnDogBarking = findViewById(R.id.btn_dog);
-        btnFastCar = findViewById(R.id.btn_Car);
+        btnFastCar = findViewById(R.id.btn_car);
         btnTapeRewind = findViewById(R.id.btn_rewind);
         btnGameShow = findViewById(R.id.btn_laugh);
         btnTerrorTransition = findViewById(R.id.btn_terror);
@@ -47,21 +45,12 @@ public class MainActivity extends AppCompatActivity {
                 playFire();
             }
         });
-
-        btnTone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                playTone();
-            }
-        });
-
         btnLaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 playLaugh();
             }
         });
-
         btnMonkeyLaugh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -105,15 +94,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        btnGameShow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                playGameShow();
-            }
-        });
-
-
         btnTerrorTransition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -125,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playFire(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_fire);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_fire);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -137,24 +117,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-
-    private void playTone(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_tone);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
 
 
     private void playLaugh(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_laugh);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_laughing);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -168,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void playMonkeyLaugh(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_monkeylaugh);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_monkey);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -182,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void playDroneSound(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_dronesound);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_drone);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -195,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playCricketChirp(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_cricketchirp);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_cricket);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -209,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void playDogBarking(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_dogbarking);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_dog);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -222,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playFastCar(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_fastcar);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_car);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -235,33 +201,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playTapeRewind(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_taperewind);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playTapeRewind(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_taperewind);
-        mp.start();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.stop();
-                mp.release();
-                mp = null;
-            }
-        });
-    }
-
-    private void playGameShow(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_gameshow);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_rewind);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -274,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playTerrorTransition(){
-        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connorsoundboard_terrortransition);
+        MediaPlayer mp = MediaPlayer.create(this,R.raw.sample_connor_terror);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
